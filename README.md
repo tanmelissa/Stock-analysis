@@ -36,7 +36,7 @@ Refactoring code can take time to accomplish. The steps to refactor the code may
 
 Sometimes, when refactoring code, you may introduce new bugs or errors than was in your original code.
 
-The refactored code may not be as simple to understand as the original code. Although you can make it easier to edit and understand overall, the logic of a refactored code may not be as obvious and the original code.
+The refactored code may not be as simple to understand as the original code. Although you can make it easier to edit and understand overall, the logic of a refactored code may not be as obvious as the original code.
 
 ### How Does This Apply to Refactoring the Original VBA Script?
 The original script has less arrays and less variables than the refactored script.
@@ -45,8 +45,20 @@ The original script only has one array: ![image](https://user-images.githubuserc
 
 While the refactored script has four: ![image](https://user-images.githubusercontent.com/102273449/167486658-52cce03f-96ac-42a0-82a2-b1ebe2deb60a.png)![image](https://user-images.githubusercontent.com/102273449/167486685-42665bf5-e8a6-4d9f-9787-7dba20d214c9.png)
 
-The original script has 7 variables: startTime, endTime, startingPrice, endingPrice, RowCount, Ticker, totalVolume
-While the refactored script has 4: startTime, endTime, RowCount, tickerIndex
+The original script has seven variables: 
+1) startTime, 
+2) endTime, 
+3) startingPrice, 
+4) endingPrice, 
+5) RowCount, 
+6) ticker, 
+7) totalVolume
+
+While the refactored script has four: 
+1) startTime, 
+2) endTime, 
+3) RowCount, 
+4) tickerIndex
 
 If you were to add more data to this excel sheet, what you would have to update in the original code would be:
 - Updating the ticker array to include the new tickers added
@@ -60,4 +72,4 @@ Although you need to change the same number of items in each code, the changes n
 
 Since this code is to analyze stocks, it would be the most helpful to keep on adding sheets with data from different years. That would increase the time that it takes to run this code. This code would benefit from refactoring because of this. It will help make the code be useful for a longer amount of time, and easier to change if more tickers were added.
 
-The original code is more intuitive when you first look at it because it seems simpler. However, adding the arrays in place of the variables is what makes the refactored code quicker easier to update in the future should more data be added. So although we may need to add more comments into the code to make it easier for another person to understand, it is worth the extra time and effort because of the possibility of adding more data in the future.
+The original code is more intuitive when you first look at it because it seems simpler. However, adding the arrays in place of the variables is what makes the refactored code quicker easier to update in the future should more data be added. So, although we may need to add more comments into the code to make it easier for another person to understand, it is worth the extra time and effort because of the possibility of adding more data in the future.
